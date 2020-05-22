@@ -1,0 +1,782 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		832AAF3124776E8B00563EFF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 832AAF3024776E8B00563EFF /* AppDelegate.m */; };
+		832AAF3424776E8B00563EFF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 832AAF3324776E8B00563EFF /* SceneDelegate.m */; };
+		832AAF3724776E8B00563EFF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 832AAF3624776E8B00563EFF /* ViewController.m */; };
+		832AAF3A24776E8B00563EFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 832AAF3824776E8B00563EFF /* Main.storyboard */; };
+		832AAF3C24776E8D00563EFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 832AAF3B24776E8D00563EFF /* Assets.xcassets */; };
+		832AAF3F24776E8D00563EFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 832AAF3D24776E8D00563EFF /* LaunchScreen.storyboard */; };
+		832AAF4224776E8D00563EFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 832AAF4124776E8D00563EFF /* main.m */; };
+		832AAF4C24776E8D00563EFF /* CYVadDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 832AAF4B24776E8D00563EFF /* CYVadDemoTests.m */; };
+		832AAF5724776E8D00563EFF /* CYVadDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 832AAF5624776E8D00563EFF /* CYVadDemoUITests.m */; };
+		832AAF8B24776EBA00563EFF /* complex_fft.c in Sources */ = {isa = PBXBuildFile; fileRef = 832AAF6C24776EBA00563EFF /* complex_fft.c */; };
+		832AAF8C24776EBA00563EFF /* resample_by_2_internal.c in Sources */ = {isa = PBXBuildFile; fileRef = 832AAF6D24776EBA00563EFF /* resample_by_2_internal.c */; };
+		832AAF8D24776EBA00563EFF /* energy.c in Sources */ = {isa = PBXBuildFile; fileRef = 832AAF6E24776EBA00563EFF /* energy.c */; };
+		832AAF8E24776EBA00563EFF /* downsample_fast.c in Sources */ = {isa = PBXBuildFile; fileRef = 832AAF6F24776EBA00563EFF /* downsample_fast.c */; };
+		832AAF8F24776EBA00563EFF /* spl_init.c in Sources */ = {isa = PBXBuildFile; fileRef = 832AAF7024776EBA00563EFF /* spl_init.c */; };
+		832AAF9024776EBA00563EFF /* cross_correlation.c in Sources */ = {isa = PBXBuildFile; fileRef = 832AAF7124776EBA00563EFF /* cross_correlation.c */; };
+		832AAF9124776EBA00563EFF /* division_operations.c in Sources */ = {isa = PBXBuildFile; fileRef = 832AAF7624776EBA00563EFF /* division_operations.c */; };
+		832AAF9224776EBA00563EFF /* get_scaling_square.c in Sources */ = {isa = PBXBuildFile; fileRef = 832AAF7724776EBA00563EFF /* get_scaling_square.c */; };
+		832AAF9324776EBA00563EFF /* min_max_operations.c in Sources */ = {isa = PBXBuildFile; fileRef = 832AAF7924776EBA00563EFF /* min_max_operations.c */; };
+		832AAF9424776EBA00563EFF /* vector_scaling_operations.c in Sources */ = {isa = PBXBuildFile; fileRef = 832AAF7A24776EBA00563EFF /* vector_scaling_operations.c */; };
+		832AAF9524776EBA00563EFF /* resample_fractional.c in Sources */ = {isa = PBXBuildFile; fileRef = 832AAF7B24776EBA00563EFF /* resample_fractional.c */; };
+		832AAF9624776EBA00563EFF /* real_fft.c in Sources */ = {isa = PBXBuildFile; fileRef = 832AAF7C24776EBA00563EFF /* real_fft.c */; };
+		832AAF9724776EBA00563EFF /* complex_bit_reverse.c in Sources */ = {isa = PBXBuildFile; fileRef = 832AAF7D24776EBA00563EFF /* complex_bit_reverse.c */; };
+		832AAF9824776EBA00563EFF /* resample_48khz.c in Sources */ = {isa = PBXBuildFile; fileRef = 832AAF7E24776EBA00563EFF /* resample_48khz.c */; };
+		832AAF9924776EBA00563EFF /* vad_sp.c in Sources */ = {isa = PBXBuildFile; fileRef = 832AAF8024776EBA00563EFF /* vad_sp.c */; };
+		832AAF9A24776EBA00563EFF /* webrtc_vad.c in Sources */ = {isa = PBXBuildFile; fileRef = 832AAF8124776EBA00563EFF /* webrtc_vad.c */; };
+		832AAF9B24776EBA00563EFF /* vad_filterbank.c in Sources */ = {isa = PBXBuildFile; fileRef = 832AAF8624776EBA00563EFF /* vad_filterbank.c */; };
+		832AAF9C24776EBA00563EFF /* vad_core.c in Sources */ = {isa = PBXBuildFile; fileRef = 832AAF8724776EBA00563EFF /* vad_core.c */; };
+		832AAF9D24776EBA00563EFF /* vad_gmm.c in Sources */ = {isa = PBXBuildFile; fileRef = 832AAF8A24776EBA00563EFF /* vad_gmm.c */; };
+		832AAFA124776F0200563EFF /* CYVad.m in Sources */ = {isa = PBXBuildFile; fileRef = 832AAFA024776F0200563EFF /* CYVad.m */; };
+		832AAFA8247774F600563EFF /* test.wav in Resources */ = {isa = PBXBuildFile; fileRef = 832AAFA7247774F600563EFF /* test.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		832AAF4824776E8D00563EFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 832AAF2424776E8B00563EFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 832AAF2B24776E8B00563EFF;
+			remoteInfo = CYVadDemo;
+		};
+		832AAF5324776E8D00563EFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 832AAF2424776E8B00563EFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 832AAF2B24776E8B00563EFF;
+			remoteInfo = CYVadDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		832AAF2C24776E8B00563EFF /* CYVadDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CYVadDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		832AAF2F24776E8B00563EFF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		832AAF3024776E8B00563EFF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		832AAF3224776E8B00563EFF /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		832AAF3324776E8B00563EFF /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		832AAF3524776E8B00563EFF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		832AAF3624776E8B00563EFF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		832AAF3924776E8B00563EFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		832AAF3B24776E8D00563EFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		832AAF3E24776E8D00563EFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		832AAF4024776E8D00563EFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		832AAF4124776E8D00563EFF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		832AAF4724776E8D00563EFF /* CYVadDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CYVadDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		832AAF4B24776E8D00563EFF /* CYVadDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYVadDemoTests.m; sourceTree = "<group>"; };
+		832AAF4D24776E8D00563EFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		832AAF5224776E8D00563EFF /* CYVadDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CYVadDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		832AAF5624776E8D00563EFF /* CYVadDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYVadDemoUITests.m; sourceTree = "<group>"; };
+		832AAF5824776E8D00563EFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		832AAF6724776EBA00563EFF /* cpu_features_wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpu_features_wrapper.h; sourceTree = "<group>"; };
+		832AAF6824776EBA00563EFF /* typedefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = typedefs.h; sourceTree = "<group>"; };
+		832AAF6B24776EBA00563EFF /* complex_fft_tables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = complex_fft_tables.h; sourceTree = "<group>"; };
+		832AAF6C24776EBA00563EFF /* complex_fft.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = complex_fft.c; sourceTree = "<group>"; };
+		832AAF6D24776EBA00563EFF /* resample_by_2_internal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = resample_by_2_internal.c; sourceTree = "<group>"; };
+		832AAF6E24776EBA00563EFF /* energy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = energy.c; sourceTree = "<group>"; };
+		832AAF6F24776EBA00563EFF /* downsample_fast.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = downsample_fast.c; sourceTree = "<group>"; };
+		832AAF7024776EBA00563EFF /* spl_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = spl_init.c; sourceTree = "<group>"; };
+		832AAF7124776EBA00563EFF /* cross_correlation.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cross_correlation.c; sourceTree = "<group>"; };
+		832AAF7324776EBA00563EFF /* signal_processing_library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = signal_processing_library.h; sourceTree = "<group>"; };
+		832AAF7424776EBA00563EFF /* real_fft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = real_fft.h; sourceTree = "<group>"; };
+		832AAF7524776EBA00563EFF /* spl_inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spl_inl.h; sourceTree = "<group>"; };
+		832AAF7624776EBA00563EFF /* division_operations.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = division_operations.c; sourceTree = "<group>"; };
+		832AAF7724776EBA00563EFF /* get_scaling_square.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = get_scaling_square.c; sourceTree = "<group>"; };
+		832AAF7824776EBA00563EFF /* resample_by_2_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resample_by_2_internal.h; sourceTree = "<group>"; };
+		832AAF7924776EBA00563EFF /* min_max_operations.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = min_max_operations.c; sourceTree = "<group>"; };
+		832AAF7A24776EBA00563EFF /* vector_scaling_operations.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vector_scaling_operations.c; sourceTree = "<group>"; };
+		832AAF7B24776EBA00563EFF /* resample_fractional.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = resample_fractional.c; sourceTree = "<group>"; };
+		832AAF7C24776EBA00563EFF /* real_fft.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = real_fft.c; sourceTree = "<group>"; };
+		832AAF7D24776EBA00563EFF /* complex_bit_reverse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = complex_bit_reverse.c; sourceTree = "<group>"; };
+		832AAF7E24776EBA00563EFF /* resample_48khz.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = resample_48khz.c; sourceTree = "<group>"; };
+		832AAF8024776EBA00563EFF /* vad_sp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vad_sp.c; sourceTree = "<group>"; };
+		832AAF8124776EBA00563EFF /* webrtc_vad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = webrtc_vad.c; sourceTree = "<group>"; };
+		832AAF8224776EBA00563EFF /* vad_core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vad_core.h; sourceTree = "<group>"; };
+		832AAF8424776EBA00563EFF /* webrtc_vad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webrtc_vad.h; sourceTree = "<group>"; };
+		832AAF8524776EBA00563EFF /* vad_gmm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vad_gmm.h; sourceTree = "<group>"; };
+		832AAF8624776EBA00563EFF /* vad_filterbank.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vad_filterbank.c; sourceTree = "<group>"; };
+		832AAF8724776EBA00563EFF /* vad_core.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vad_core.c; sourceTree = "<group>"; };
+		832AAF8824776EBA00563EFF /* vad_sp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vad_sp.h; sourceTree = "<group>"; };
+		832AAF8924776EBA00563EFF /* vad_filterbank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vad_filterbank.h; sourceTree = "<group>"; };
+		832AAF8A24776EBA00563EFF /* vad_gmm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vad_gmm.c; sourceTree = "<group>"; };
+		832AAF9F24776F0200563EFF /* CYVad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYVad.h; sourceTree = "<group>"; };
+		832AAFA024776F0200563EFF /* CYVad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYVad.m; sourceTree = "<group>"; };
+		832AAFA7247774F600563EFF /* test.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = test.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		832AAF2924776E8B00563EFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		832AAF4424776E8D00563EFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		832AAF4F24776E8D00563EFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		832AAF2324776E8B00563EFF = {
+			isa = PBXGroup;
+			children = (
+				832AAFA4247774C300563EFF /* testVoice */,
+				832AAF6424776EBA00563EFF /* webrtc */,
+				832AAF9E24776ED900563EFF /* CYVAD */,
+				832AAF2E24776E8B00563EFF /* CYVadDemo */,
+				832AAF4A24776E8D00563EFF /* CYVadDemoTests */,
+				832AAF5524776E8D00563EFF /* CYVadDemoUITests */,
+				832AAF2D24776E8B00563EFF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		832AAF2D24776E8B00563EFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				832AAF2C24776E8B00563EFF /* CYVadDemo.app */,
+				832AAF4724776E8D00563EFF /* CYVadDemoTests.xctest */,
+				832AAF5224776E8D00563EFF /* CYVadDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		832AAF2E24776E8B00563EFF /* CYVadDemo */ = {
+			isa = PBXGroup;
+			children = (
+				832AAF2F24776E8B00563EFF /* AppDelegate.h */,
+				832AAF3024776E8B00563EFF /* AppDelegate.m */,
+				832AAF3224776E8B00563EFF /* SceneDelegate.h */,
+				832AAF3324776E8B00563EFF /* SceneDelegate.m */,
+				832AAF3524776E8B00563EFF /* ViewController.h */,
+				832AAF3624776E8B00563EFF /* ViewController.m */,
+				832AAF3824776E8B00563EFF /* Main.storyboard */,
+				832AAF3B24776E8D00563EFF /* Assets.xcassets */,
+				832AAF3D24776E8D00563EFF /* LaunchScreen.storyboard */,
+				832AAF4024776E8D00563EFF /* Info.plist */,
+				832AAF4124776E8D00563EFF /* main.m */,
+			);
+			path = CYVadDemo;
+			sourceTree = "<group>";
+		};
+		832AAF4A24776E8D00563EFF /* CYVadDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				832AAF4B24776E8D00563EFF /* CYVadDemoTests.m */,
+				832AAF4D24776E8D00563EFF /* Info.plist */,
+			);
+			path = CYVadDemoTests;
+			sourceTree = "<group>";
+		};
+		832AAF5524776E8D00563EFF /* CYVadDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				832AAF5624776E8D00563EFF /* CYVadDemoUITests.m */,
+				832AAF5824776E8D00563EFF /* Info.plist */,
+			);
+			path = CYVadDemoUITests;
+			sourceTree = "<group>";
+		};
+		832AAF6424776EBA00563EFF /* webrtc */ = {
+			isa = PBXGroup;
+			children = (
+				832AAF6824776EBA00563EFF /* typedefs.h */,
+				832AAF6524776EBA00563EFF /* system_wrappers */,
+				832AAF6924776EBA00563EFF /* common_audio */,
+			);
+			path = webrtc;
+			sourceTree = "<group>";
+		};
+		832AAF6524776EBA00563EFF /* system_wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				832AAF6624776EBA00563EFF /* interface */,
+			);
+			path = system_wrappers;
+			sourceTree = "<group>";
+		};
+		832AAF6624776EBA00563EFF /* interface */ = {
+			isa = PBXGroup;
+			children = (
+				832AAF6724776EBA00563EFF /* cpu_features_wrapper.h */,
+			);
+			path = interface;
+			sourceTree = "<group>";
+		};
+		832AAF6924776EBA00563EFF /* common_audio */ = {
+			isa = PBXGroup;
+			children = (
+				832AAF6A24776EBA00563EFF /* signal_processing */,
+				832AAF7F24776EBA00563EFF /* vad */,
+			);
+			path = common_audio;
+			sourceTree = "<group>";
+		};
+		832AAF6A24776EBA00563EFF /* signal_processing */ = {
+			isa = PBXGroup;
+			children = (
+				832AAF6B24776EBA00563EFF /* complex_fft_tables.h */,
+				832AAF6C24776EBA00563EFF /* complex_fft.c */,
+				832AAF6D24776EBA00563EFF /* resample_by_2_internal.c */,
+				832AAF6E24776EBA00563EFF /* energy.c */,
+				832AAF6F24776EBA00563EFF /* downsample_fast.c */,
+				832AAF7024776EBA00563EFF /* spl_init.c */,
+				832AAF7124776EBA00563EFF /* cross_correlation.c */,
+				832AAF7224776EBA00563EFF /* include */,
+				832AAF7624776EBA00563EFF /* division_operations.c */,
+				832AAF7724776EBA00563EFF /* get_scaling_square.c */,
+				832AAF7824776EBA00563EFF /* resample_by_2_internal.h */,
+				832AAF7924776EBA00563EFF /* min_max_operations.c */,
+				832AAF7A24776EBA00563EFF /* vector_scaling_operations.c */,
+				832AAF7B24776EBA00563EFF /* resample_fractional.c */,
+				832AAF7C24776EBA00563EFF /* real_fft.c */,
+				832AAF7D24776EBA00563EFF /* complex_bit_reverse.c */,
+				832AAF7E24776EBA00563EFF /* resample_48khz.c */,
+			);
+			path = signal_processing;
+			sourceTree = "<group>";
+		};
+		832AAF7224776EBA00563EFF /* include */ = {
+			isa = PBXGroup;
+			children = (
+				832AAF7324776EBA00563EFF /* signal_processing_library.h */,
+				832AAF7424776EBA00563EFF /* real_fft.h */,
+				832AAF7524776EBA00563EFF /* spl_inl.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		832AAF7F24776EBA00563EFF /* vad */ = {
+			isa = PBXGroup;
+			children = (
+				832AAF8024776EBA00563EFF /* vad_sp.c */,
+				832AAF8124776EBA00563EFF /* webrtc_vad.c */,
+				832AAF8224776EBA00563EFF /* vad_core.h */,
+				832AAF8324776EBA00563EFF /* include */,
+				832AAF8524776EBA00563EFF /* vad_gmm.h */,
+				832AAF8624776EBA00563EFF /* vad_filterbank.c */,
+				832AAF8724776EBA00563EFF /* vad_core.c */,
+				832AAF8824776EBA00563EFF /* vad_sp.h */,
+				832AAF8924776EBA00563EFF /* vad_filterbank.h */,
+				832AAF8A24776EBA00563EFF /* vad_gmm.c */,
+			);
+			path = vad;
+			sourceTree = "<group>";
+		};
+		832AAF8324776EBA00563EFF /* include */ = {
+			isa = PBXGroup;
+			children = (
+				832AAF8424776EBA00563EFF /* webrtc_vad.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		832AAF9E24776ED900563EFF /* CYVAD */ = {
+			isa = PBXGroup;
+			children = (
+				832AAF9F24776F0200563EFF /* CYVad.h */,
+				832AAFA024776F0200563EFF /* CYVad.m */,
+			);
+			path = CYVAD;
+			sourceTree = "<group>";
+		};
+		832AAFA4247774C300563EFF /* testVoice */ = {
+			isa = PBXGroup;
+			children = (
+				832AAFA7247774F600563EFF /* test.wav */,
+			);
+			path = testVoice;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		832AAF2B24776E8B00563EFF /* CYVadDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 832AAF5B24776E8D00563EFF /* Build configuration list for PBXNativeTarget "CYVadDemo" */;
+			buildPhases = (
+				832AAF2824776E8B00563EFF /* Sources */,
+				832AAF2924776E8B00563EFF /* Frameworks */,
+				832AAF2A24776E8B00563EFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CYVadDemo;
+			productName = CYVadDemo;
+			productReference = 832AAF2C24776E8B00563EFF /* CYVadDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		832AAF4624776E8D00563EFF /* CYVadDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 832AAF5E24776E8D00563EFF /* Build configuration list for PBXNativeTarget "CYVadDemoTests" */;
+			buildPhases = (
+				832AAF4324776E8D00563EFF /* Sources */,
+				832AAF4424776E8D00563EFF /* Frameworks */,
+				832AAF4524776E8D00563EFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				832AAF4924776E8D00563EFF /* PBXTargetDependency */,
+			);
+			name = CYVadDemoTests;
+			productName = CYVadDemoTests;
+			productReference = 832AAF4724776E8D00563EFF /* CYVadDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		832AAF5124776E8D00563EFF /* CYVadDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 832AAF6124776E8D00563EFF /* Build configuration list for PBXNativeTarget "CYVadDemoUITests" */;
+			buildPhases = (
+				832AAF4E24776E8D00563EFF /* Sources */,
+				832AAF4F24776E8D00563EFF /* Frameworks */,
+				832AAF5024776E8D00563EFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				832AAF5424776E8D00563EFF /* PBXTargetDependency */,
+			);
+			name = CYVadDemoUITests;
+			productName = CYVadDemoUITests;
+			productReference = 832AAF5224776E8D00563EFF /* CYVadDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		832AAF2424776E8B00563EFF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = Chris;
+				TargetAttributes = {
+					832AAF2B24776E8B00563EFF = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					832AAF4624776E8D00563EFF = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 832AAF2B24776E8B00563EFF;
+					};
+					832AAF5124776E8D00563EFF = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 832AAF2B24776E8B00563EFF;
+					};
+				};
+			};
+			buildConfigurationList = 832AAF2724776E8B00563EFF /* Build configuration list for PBXProject "CYVadDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 832AAF2324776E8B00563EFF;
+			productRefGroup = 832AAF2D24776E8B00563EFF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				832AAF2B24776E8B00563EFF /* CYVadDemo */,
+				832AAF4624776E8D00563EFF /* CYVadDemoTests */,
+				832AAF5124776E8D00563EFF /* CYVadDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		832AAF2A24776E8B00563EFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				832AAFA8247774F600563EFF /* test.wav in Resources */,
+				832AAF3F24776E8D00563EFF /* LaunchScreen.storyboard in Resources */,
+				832AAF3C24776E8D00563EFF /* Assets.xcassets in Resources */,
+				832AAF3A24776E8B00563EFF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		832AAF4524776E8D00563EFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		832AAF5024776E8D00563EFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		832AAF2824776E8B00563EFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				832AAF3724776E8B00563EFF /* ViewController.m in Sources */,
+				832AAF9224776EBA00563EFF /* get_scaling_square.c in Sources */,
+				832AAF9A24776EBA00563EFF /* webrtc_vad.c in Sources */,
+				832AAF8E24776EBA00563EFF /* downsample_fast.c in Sources */,
+				832AAF8C24776EBA00563EFF /* resample_by_2_internal.c in Sources */,
+				832AAF9024776EBA00563EFF /* cross_correlation.c in Sources */,
+				832AAF3124776E8B00563EFF /* AppDelegate.m in Sources */,
+				832AAF9324776EBA00563EFF /* min_max_operations.c in Sources */,
+				832AAF9124776EBA00563EFF /* division_operations.c in Sources */,
+				832AAFA124776F0200563EFF /* CYVad.m in Sources */,
+				832AAF9424776EBA00563EFF /* vector_scaling_operations.c in Sources */,
+				832AAF9924776EBA00563EFF /* vad_sp.c in Sources */,
+				832AAF4224776E8D00563EFF /* main.m in Sources */,
+				832AAF9824776EBA00563EFF /* resample_48khz.c in Sources */,
+				832AAF9B24776EBA00563EFF /* vad_filterbank.c in Sources */,
+				832AAF8B24776EBA00563EFF /* complex_fft.c in Sources */,
+				832AAF3424776E8B00563EFF /* SceneDelegate.m in Sources */,
+				832AAF9D24776EBA00563EFF /* vad_gmm.c in Sources */,
+				832AAF9C24776EBA00563EFF /* vad_core.c in Sources */,
+				832AAF8F24776EBA00563EFF /* spl_init.c in Sources */,
+				832AAF9524776EBA00563EFF /* resample_fractional.c in Sources */,
+				832AAF9724776EBA00563EFF /* complex_bit_reverse.c in Sources */,
+				832AAF9624776EBA00563EFF /* real_fft.c in Sources */,
+				832AAF8D24776EBA00563EFF /* energy.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		832AAF4324776E8D00563EFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				832AAF4C24776E8D00563EFF /* CYVadDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		832AAF4E24776E8D00563EFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				832AAF5724776E8D00563EFF /* CYVadDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		832AAF4924776E8D00563EFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 832AAF2B24776E8B00563EFF /* CYVadDemo */;
+			targetProxy = 832AAF4824776E8D00563EFF /* PBXContainerItemProxy */;
+		};
+		832AAF5424776E8D00563EFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 832AAF2B24776E8B00563EFF /* CYVadDemo */;
+			targetProxy = 832AAF5324776E8D00563EFF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		832AAF3824776E8B00563EFF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				832AAF3924776E8B00563EFF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		832AAF3D24776E8D00563EFF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				832AAF3E24776E8D00563EFF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		832AAF5924776E8D00563EFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		832AAF5A24776E8D00563EFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		832AAF5C24776E8D00563EFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67KFM65GB3;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)";
+				INFOPLIST_FILE = CYVadDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chris.CYVadDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		832AAF5D24776E8D00563EFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67KFM65GB3;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)";
+				INFOPLIST_FILE = CYVadDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chris.CYVadDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		832AAF5F24776E8D00563EFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67KFM65GB3;
+				INFOPLIST_FILE = CYVadDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chris.CYVadDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CYVadDemo.app/CYVadDemo";
+			};
+			name = Debug;
+		};
+		832AAF6024776E8D00563EFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67KFM65GB3;
+				INFOPLIST_FILE = CYVadDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chris.CYVadDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CYVadDemo.app/CYVadDemo";
+			};
+			name = Release;
+		};
+		832AAF6224776E8D00563EFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67KFM65GB3;
+				INFOPLIST_FILE = CYVadDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chris.CYVadDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CYVadDemo;
+			};
+			name = Debug;
+		};
+		832AAF6324776E8D00563EFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67KFM65GB3;
+				INFOPLIST_FILE = CYVadDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chris.CYVadDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CYVadDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		832AAF2724776E8B00563EFF /* Build configuration list for PBXProject "CYVadDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				832AAF5924776E8D00563EFF /* Debug */,
+				832AAF5A24776E8D00563EFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		832AAF5B24776E8D00563EFF /* Build configuration list for PBXNativeTarget "CYVadDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				832AAF5C24776E8D00563EFF /* Debug */,
+				832AAF5D24776E8D00563EFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		832AAF5E24776E8D00563EFF /* Build configuration list for PBXNativeTarget "CYVadDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				832AAF5F24776E8D00563EFF /* Debug */,
+				832AAF6024776E8D00563EFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		832AAF6124776E8D00563EFF /* Build configuration list for PBXNativeTarget "CYVadDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				832AAF6224776E8D00563EFF /* Debug */,
+				832AAF6324776E8D00563EFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 832AAF2424776E8B00563EFF /* Project object */;
+}
